@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemas</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3a359ba4b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#">
+              <img src="imgs/logo.png" class="nav__logo" class="d-inline-block align-top" alt="logo">
+            </a>
+            <div class="btn-group d-xs-none d-sm-flex d-md-flex d-lg-none position-static" role="group">
+                <button id="btnGroupDrop1" type="button" class="nav_btns-2" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                    <i class="fas fa-bars nav__btns--icon-2"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-2 position-absolute" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item btn btn--black btn-link" href="#">Home</a>
+                    <a class="dropdown-item btn btn--black btn-link" href="#">About Us</a>
+                    <a class="dropdown-item btn btn--black btn-link" href="#">Products</a>
+                    <a class="dropdown-item btn btn--black btn-link" href="#">pages</a>
+                    <a class="dropdown-item btn btn--black btn-link" href="#">Blog</a>
+                    <a class="dropdown-item btn btn--black btn-link" href="#">Contact</a>
+                </div>
+            </div>
+            <div class="nav__btns d-xs-none d-sm-none d-md-none d-lg-flex">
+                <button type="button" class="btn btn-link">Home</button>
+                <button type="button" class="btn btn-link back-slash-before">About Us</button>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-link back-slash-before" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                    Product
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item btn btn--black btn-link" href="#">Our Product</a>
+                        <a class="dropdown-item btn btn--black btn-link" href="#">Product with sidebar</a>
+                        <a class="dropdown-item btn btn--black btn-link" href="#">Product Details</a>
+                    </div>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-link back-slash-before" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                    Pages
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item btn btn--black btn-link" href="#">Vendor Profile</a>
+                        <a class="dropdown-item btn btn--black btn-link" href="#">Our Forms</a>
+                        <a class="dropdown-item btn btn--black btn-link" href="#">404 page</a>
+                    </div>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-link back-slash-before" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                    Blogs
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item btn btn--black btn-link" href="#">Blog Page</a>
+                        <a class="dropdown-item btn btn--black btn-link" href="#">Blog Details</a>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-link back-slash-before">Contact</button>
+                <button type="button" class="btn btn-link btn--account"><i class="fas fa-user nav__btns--icon"></i>My Account</button>
+            </div>
+        </nav>
+        <div class="heading d-flex flex-row px-5 pt-6">
+            <div class="container-md heading__left">
+                <h1 class="">We Make</h1>
+                <h1 class="under-line md-3">Creative Market</h1>
+                <p>Find technology or people for digital projects in public sector. Find an</p>
+                <p class="md-3">individual specialist. eg a developer or user researcher.</p>
+                <button type="button" class="btn btn-link btn--account">Browse Projects</button>
+            </div>
+            <div class="w-50 d-xs-none d-sm-none d-md-none d-lg-flex heading__rigth position-relative d-flex justify-content-end">
+                <img src="imgs/slider_img01.jpg"/>
+                <img class="position-absolute heading__rigth--img2" src="imgs/slider_img02.png"/>
+            </div>
+        </div>
+    </header>
+      
+    <!-- header -->
+    <!-- search -->
+
+    <div class="">
+      <div class="col-lg-10 col-md-6 col-sm-4 search p-5 bg-white mx-auto mt-n5 rounded">
+        <div class="input-group mb-3 w-100 mx-auto p-5 d-sm-block d-xm-block d-md-flex justify-content-center">
+            <div class="input-group-prepend">
+              <select class="font-weight-normal search__select">
+                  <option>all categary</option>
+                  <option>all categary</option>
+                  <option>all categary</option>
+                  <option>all categary</option>
+              </select>
+            </div>
+            <input type="text" placeholder="type" class="col-xs-4 col-sm-6 col-sm-8 col-lg-12 form-control search__input" aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+              <span class="input-group-text icon--search"><i class="fas fa-search text-white"></i></span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- search -->
+    <!-- NEWLY -->
+    <div class="newly mt-4">
+        <div class="newly__items mx-auto">
+            <h3 class="mb-5">NEWLY ADDED PRODUCTS</h3>
+            <div class="newly__items--photo d-flex flex-column flex-wrap">
+                <div class="flex-wrap row1 d-flex mb-5">
+                    <img class="newly--show" src="imgs/product_thumbnail10.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none dnone d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail11.png"/>
+                    <div class="card mb-3 card__projects p-3  d-xs-none d-sm-none dnone d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail12.png"/>
+                    <div class="card mb-3 card__projects p-3">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail13.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-none d-lg-block">
+                        <img src="imgs/project_thumb02.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail14.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none dnone d-lg-block">
+                        <img src="imgs/project_thumb03.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail15.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-none d-lg-block">
+                        <img src="imgs/project_thumb05.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail16.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail17.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail18.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-none d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail01.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-none d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail02.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none dnone d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail03.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-none d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail04.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-none d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail05.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-none d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail06.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-none d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail07.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-none d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail08.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-none d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                    <img class="newly--show" src="imgs/product_thumbnail09.png"/>
+                    <div class="card mb-3 card__projects p-3 d-xs-none d-sm-none d-md-none d-lg-block">
+                        <img src="imgs/project_thumb01.jpg" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Card title</h3>
+                          <p class="card-text text-white-50">By Gemas</p>
+                          <p class="card-text "><small class="text-muted">site template</small></p>
+                          <span>$16.00</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NEWLY -->
+    <!-- WHAT WE DO -->
+    <section class="whatdo">
+        <div class="whatdo__contant mx-auto">
+            <div class="w-100 d-lg-flex justify-content-center">
+              <div class="whatdo__contant--left d-flex flex-column align-items-lg-start align-items-md-center align-items-sm-center align-items-xs-center col-lg-6">
+                <p class="font-weight-bold">WHAT WE DO</p>
+                <h2 class="font-weight-bold">Lowest Pricing Available</h2>
+                <h2 class="font-weight-bold">Online or Brand Themes</h2>
+                <h2 class="font-weight-bold mb-5">Products Time</h2>
+                <button type="button" class="btn btn-link btn--account mt-2 mb-5"> More Feature </button>
+            </div>
+            <div class="whatdo__contant--rigth  d-flex flex-column align-items-lg-start align-items-md-center align-items-sm-center align-items-xs-center  col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <p>Find technology or people for digital projects in public sector.</p>
+                <p>Find an individual specialist developer.</p>
+                <div class="row">
+                    <div class="card col-lg-6 col-md-6 col-sm-12" style="background-color: transparent;">
+                      <div class="card-body text-xs-center text-sm-center text-md-left">
+                        <img class="mb-5" src="imgs/features_icon01.png"/>
+                        <h3 class="mb-4 font-weight-bold text-white card-subtitle mb-2 text-muted">Experienced 10 Years!</h3>
+                        <p class="card-text">Find technology or people for digital</p>
+                        <p class="card-text">projects in public sector</p>
+                      </div>
+                    </div>
+                    <div class="card col-lg-6 col-md-6 col-sm-12" style="background-color: transparent;">
+                      <div class="card-body text-xs-center text-sm-center text-md-left">
+                        <img class="mb-5" src="imgs/features_icon02.png"/>
+                        <h3 class="mb-4 font-weight-bold text-white card-subtitle mb-2 text-muted">Experienced 10 Years!</h3>
+                        <p class="card-text">Find technology or people for digital</p>
+                        <p class="card-text">projects in public sector</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="card col-lg-6 col-md-6 col-sm-12" style="background-color: transparent;">
+                    <div class="card-body text-xs-center text-sm-center text-md-left">
+                      <img class="mb-5" src="imgs/features_icon01.png"/>
+                      <h3 class="mb-4 font-weight-bold text-white card-subtitle mb-2 text-muted">Experienced 10 Years!</h3>
+                      <p class="card-text">Find technology or people for digital</p>
+                      <p class="card-text">projects in public sector</p>
+                    </div>
+                  </div>
+                  <div class="card col-lg-6 col-md-6 col-sm-12" style="background-color: transparent;">
+                    <div class="card-body text-xs-center text-sm-center text-md-left">
+                      <img class="mb-5" src="imgs/features_icon02.png"/>
+                      <h3 class="mb-4 font-weight-bold text-white card-subtitle mb-2 text-muted">Experienced 10 Years!</h3>
+                      <p class="card-text">Find technology or people for digital</p>
+                      <p class="card-text">projects in public sector</p>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- WHAT WE DO -->
+    <!-- check new -->
+    <section class="check text-center">
+          <div class="check__text col-xl-9 col-lg-9 mx-auto col-md-12 col-sm-12 col-xs-6">
+            <p>LET'S CHECK OUT</p>
+            <h2 class="mb-5">Newest Release Items</h2>
+            <p>Business plan template presented here will get you started. A standard business plan consists</p>
+            <p>of a single document divided into several sections</p>
+            <div class="mx-auto check__text--menu bg-white p-4 rounded shadow  d-flex justify-content-around flex-wrap">
+              <button type="button" class="btn btn-light btn--check">All</button>
+              <button type="button" class="btn btn-light btn--check">WordPress</button>
+              <button type="button" class="btn btn-light btn--check">Plugins</button>
+              <button type="button" class="btn btn-light btn--check">Site Template</button>
+              <button type="button" class="btn btn-light btn--check">Interface</button>
+              <button type="button" class="btn btn-light btn--check">Landing page</button>
+              <button type="button" class="btn btn-light btn--check">Mangenta</button>
+            </div>
+          </div>
+          <div class="check__card mx-auto mt-5 d-flex flex-wrap justify-content-sm-center  justify-content-lg-start">
+            <!-- cards -->
+            
+            <div class="card text-left" >
+              <img src="imgs/project_thumb01.jpg" class="card-img-top" alt="...">
+              <div class="card-body mx-5">
+                <h5 class="card-title mt-4 d-flex justify-content-between"><span>wordpress</span> <span class="cost font-weight-bold text-dark">$49</span></h5>
+                <p class="card-text font-weight-bold text-dark">Mobileshop Business Template</p>
+                <p class="card-text font-weight-light text-black-50">Plus business presented here...</p>
+              </div>
+              <div class="card__body--rate p-4 border-top w-100 mt-4 d-flex align-items-center">
+                <img src="imgs/porduct_avatar01.png"/>
+                <p class="font-weight-bold mt-3 w-50"><span class="text-dark ml-3">By</span> ThemeEX</p>
+                <div class="d-flex justify-content-end w-100">
+                  <div class="rate--stars d-flex justify-content-end">
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                </div>
+              </div>
+                </div>
+            </div>
+            <div class="card text-left" >
+              <img src="imgs/project_thumb01.jpg" class="card-img-top" alt="...">
+              <div class="card-body mx-5">
+                <h5 class="card-title mt-4 d-flex justify-content-between"><span>wordpress</span> <span class="cost font-weight-bold text-dark">$49</span></h5>
+                <p class="card-text font-weight-bold text-dark">Mobileshop Business Template</p>
+                <p class="card-text font-weight-light text-black-50">Plus business presented here...</p>
+              </div>
+              <div class="card__body--rate p-4 border-top w-100 mt-4 d-flex align-items-center">
+                <img src="imgs/porduct_avatar01.png"/>
+                <p class="font-weight-bold mt-3 w-50"><span class="text-dark ml-3">By</span> ThemeEX</p>
+                <div class="d-flex justify-content-end w-100">
+                  <div class="rate--stars d-flex justify-content-end">
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                </div>
+              </div>
+                </div>
+            </div>
+            <div class="card text-left" >
+              <img src="imgs/project_thumb01.jpg" class="card-img-top" alt="...">
+              <div class="card-body mx-5">
+                <h5 class="card-title mt-4 d-flex justify-content-between"><span>wordpress</span> <span class="cost font-weight-bold text-dark">$49</span></h5>
+                <p class="card-text font-weight-bold text-dark">Mobileshop Business Template</p>
+                <p class="card-text font-weight-light text-black-50">Plus business presented here...</p>
+              </div>
+              <div class="card__body--rate p-4 border-top w-100 mt-4 d-flex align-items-center">
+                <img src="imgs/porduct_avatar01.png"/>
+                <p class="font-weight-bold mt-3 w-50"><span class="text-dark ml-3">By</span> ThemeEX</p>
+                <div class="d-flex justify-content-end w-100">
+                  <div class="rate--stars d-flex justify-content-end">
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                </div>
+              </div>
+                </div>
+            </div>
+            <div class="card text-left" >
+              <img src="imgs/project_thumb01.jpg" class="card-img-top" alt="...">
+              <div class="card-body mx-5">
+                <h5 class="card-title mt-4 d-flex justify-content-between"><span>wordpress</span> <span class="cost font-weight-bold text-dark">$49</span></h5>
+                <p class="card-text font-weight-bold text-dark">Mobileshop Business Template</p>
+                <p class="card-text font-weight-light text-black-50">Plus business presented here...</p>
+              </div>
+              <div class="card__body--rate p-4 border-top w-100 mt-4 d-flex align-items-center">
+                <img src="imgs/porduct_avatar01.png"/>
+                <p class="font-weight-bold mt-3 w-50"><span class="text-dark ml-3">By</span> ThemeEX</p>
+                <div class="d-flex justify-content-end w-100">
+                  <div class="rate--stars d-flex justify-content-end">
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                </div>
+              </div>
+                </div>
+            </div>
+            <div class="card text-left" >
+              <img src="imgs/project_thumb01.jpg" class="card-img-top" alt="...">
+              <div class="card-body mx-5">
+                <h5 class="card-title mt-4 d-flex justify-content-between"><span>wordpress</span> <span class="cost font-weight-bold text-dark">$49</span></h5>
+                <p class="card-text font-weight-bold text-dark">Mobileshop Business Template</p>
+                <p class="card-text font-weight-light text-black-50">Plus business presented here...</p>
+              </div>
+              <div class="card__body--rate p-4 border-top w-100 mt-4 d-flex align-items-center">
+                <img src="imgs/porduct_avatar01.png"/>
+                <p class="font-weight-bold mt-3 w-50"><span class="text-dark ml-3">By</span> ThemeEX</p>
+                <div class="d-flex justify-content-end w-100">
+                  <div class="rate--stars d-flex justify-content-end">
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                </div>
+              </div>
+                </div>
+            </div>
+            <div class="card text-left" >
+              <img src="imgs/project_thumb01.jpg" class="card-img-top" alt="...">
+              <div class="card-body mx-5">
+                <h5 class="card-title mt-4 d-flex justify-content-between"><span>wordpress</span> <span class="cost font-weight-bold text-dark">$49</span></h5>
+                <p class="card-text font-weight-bold text-dark">Mobileshop Business Template</p>
+                <p class="card-text font-weight-light text-black-50">Plus business presented here...</p>
+              </div>
+              <div class="card__body--rate p-4 border-top w-100 mt-4 d-flex align-items-center">
+                <img src="imgs/porduct_avatar01.png"/>
+                <p class="font-weight-bold mt-3 w-50"><span class="text-dark ml-3">By</span> ThemeEX</p>
+                <div class="d-flex justify-content-end w-100">
+                  <div class="rate--stars d-flex justify-content-end">
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                    <i class="fas fa-star ml-2"></i>
+                </div>
+              </div>
+                </div>
+            </div>
+            
+            <!-- cards -->
+          </div>
+    </section>
+    <!-- check new -->
+
+    <!-- PRICING  -->
+    <section class="pricing bg-white">
+        <div class="pricing__contant mx-auto">
+            <div class="w-100 d-lg-flex justify-content-center">
+              <div class="pricing__contant--left d-flex flex-column align-items-lg-start align-items-md-center align-items-sm-center align-items-xs-center col-lg-6">
+                <p class="font-weight-bold">PRICING STRATEGY</p>
+                <h2 class="font-weight-bold">Gemas Will Offer Price for Your Business!</h2>
+                <p class="w-75 text-dark">Business plan template presented here will get you started. A standard business plan consists of a single.</p>
+                <p class="w-75 text-dark mb-5">The price can be set to maximize profitability for each unit sold or from the market overall. It can be used to defend an existing market from new entrants, to increase</p>
+                <div class="switch__button d-flex justify-content-between align-items-center">
+                  <p class="font-weight-bold">Monthly</p>
+                  <div class="switch__button--btn">
+                    <div class="switch__button--btn--1"></div>
+                  </div>
+                  <p class="font-weight-bold">Yearly</p>
+                </div>
+            </div>
+            <div class="pricing__contant--rigth position-relative d-flex flex-column align-items-lg-start align-items-md-center align-items-sm-center align-items-xs-center  col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div class="prigth__card shadow prigth__card--2 position-absolute">
+                <div class="prigth__card--top d-flex justify-content-center align-items-center">
+                  <div class="prigth__card--heading">
+                    LIMITED OFFER
+                  </div>
+                  <div class="prigth__card--top--text d-flex flex-column justify-content-center align-items-center"><span>STANDARD</span><span>$99</span></div>
+                </div>
+                <div class="prigth__card--bottom d-flex flex-column justify-content-center align-items-center">
+                    <ul>
+                      <li><i class="fas fa-check"></i>Up to 5 Web Pages</li>
+                      <li><i class="fas fa-check"></i>Single two theme optimization</li>
+                      <li><i class="fas fa-check"></i>1 year support & updates</li>
+                      <li><i class="fas fa-check"></i>20% Future Purchases</li>
+                      <li><i class="fas fa-check"></i>5 WordPress Theme</li>
+                    </ul>
+                    <button type="button" class="btn btn-link btn--account mt-2 mb-5">Purchase Now</button>
+                </div>
+              </div>  
+              <div class="prigth__card shadow prigth__card--1 position-absolute">
+                  <div class="prigth__card--top d-flex justify-content-center align-items-center">
+                    <div class="prigth__card--heading">
+                      LIMITED OFFER
+                    </div>
+                    <div class="prigth__card--top--text d-flex flex-column justify-content-center align-items-center"><span>STANDARD</span><span>$99</span></div>
+                  </div>
+                  <div class="prigth__card--bottom d-flex flex-column justify-content-center align-items-center">
+                      <ul>
+                        <li><i class="fas fa-check"></i>Up to 5 Web Pages</li>
+                        <li><i class="fas fa-check"></i>Single two theme optimization</li>
+                        <li><i class="fas fa-check"></i>1 year support & updates</li>
+                        <li><i class="fas fa-check"></i>20% Future Purchases</li>
+                        <li><i class="fas fa-check"></i>5 WordPress Theme</li>
+                      </ul>
+                      <button type="button" class="btn btn-link btn--account mt-2 mb-5">Purchase Now</button>
+                  </div>
+                </div>    
+                  
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- PRICING  -->
+    <!-- FOLLOWERS -->
+    <div class="followers">
+      <div class="justify-content-center followers__contant mx-auto d-flex pl-5 flex-wrap">
+        <div class="followers__card rounded d-flex justify-content-center flex-column align-items-center">
+          <img class="" src="imgs/fact_icon01.png"/>
+          <h4>245</h4>
+          <p>Amazing Feature Item</p>
+        </div>
+        <div class="followers__card rounded d-flex justify-content-center flex-column align-items-center">
+          <img class="" src="imgs/fact_icon01.png"/>
+          <h4>245</h4>
+          <p>Amazing Feature Item</p>
+        </div>
+        <div class="followers__card rounded d-flex justify-content-center flex-column align-items-center">
+          <img class="" src="imgs/fact_icon01.png"/>
+          <h4>245</h4>
+          <p>Amazing Feature Item</p>
+        </div>
+        <div class="followers__card rounded d-flex justify-content-center flex-column align-items-center">
+          <img class="" src="imgs/fact_icon01.png"/>
+          <h4>245</h4>
+          <p>Amazing Feature Item</p>
+        </div>
+      </div>
+    </div>
+    <!-- FOLLOWERS -->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class=" footer__contant mx-auto d-flex  justify-content-md-between justify-content-sm-center flex-wrap align-items-center">
+        <div class=" footer__contant--card d-flex flex-column align-items-start">
+          <img class="mb-4 mt-5" src="imgs/logo.png" />
+          <p class="mt-3">Gemas marketplace the relase etras thats sheets continig passag.</p>
+          <p class="mt-4 mb-1"><i class="fas fa-map-marker-alt mr-3"></i> Address : PO Box W75 Street lan</p>
+          <p class="mb-3">West new queens</p>
+          <p class="mt-4 mb-1"><i class="fas fa-headphones mr-3"></i> Phone : +24 1245 654 235</p>
+          <p class="mt-4 mb-1"><i class="fas fa-envelope-open mr-3"></i> Email : info@exemple.com</p>
+        </div>
+
+        <div class="footer__contant--card  d-flex flex-column align-items-start">
+          <h5 class="">PRODUCTS</h5>
+          <p class="mt-3">Graphics (26)</p>
+          <p class="mt-4 mb-1">Backgrounds (11)</p>
+          <p class="mb-3">Fonts (9)</p>
+          <p class="mt-4 mb-1">Music (3)</p>
+          <p class="mt-4 mb-1">Photography (3)</p>
+        </div>
+
+        <div class="footer__contant--card  d-flex flex-column align-items-start">
+          <h5 class="">NEED HELP?</h5>
+          <p class="mt-3">Terms & Conditions</p>
+          <p class="mt-4 mb-1">Privacy Policy</p>
+          <p class="mb-3">Refund Policy</p>
+          <p class="mt-4 mb-1">Affiliate</p>
+          <p class="mt-4 mb-1">FAQUse Cases</p>
+        </div>
+
+        <div class="footer__contant--card d-flex flex-column align-items-start">
+          <h5 class="">FOLLOW US</h5>
+          <div class="d-flex w-100">
+            <i class="fab fa-facebook-square rounded icon icon--1 mr-3"></i>
+            <i class="fab fa-twitter-square rounded icon icon--2 mr-3"></i>
+            <i class="fab fa-pinterest-square rounded icon icon--3 mr-3"></i>
+            <i class="fab fa-linkedin rounded icon icon--4"></i>
+          </div>
+          <h5 class="">NEWSLETTER SIGN UP</h5>
+          <div class="input-group mb-3 pr-3 border-0">
+            <input type="text" class="form-control form-input" placeholder="Enter your Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append bg-transparent border-0">
+              <span class="input-group-text bg-transparent" id="basic-addon2"><i class="fas fa-rocket icon--form"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

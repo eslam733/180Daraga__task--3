@@ -1,0 +1,108 @@
+.btn{
+    font-size: $font-size-sm;
+    color: $white;
+    padding: $padding-size-xs 2rem;
+    font-weight: bold;
+    position: relative;
+
+    &--black{
+        color: $black-1;
+        font-weight: 400;
+        &:hover{
+            color: $primary;
+            transform: translateX(0) !important;
+        }
+    }
+
+    &:link,
+    &:visited{
+        text-decoration: none;
+    }
+
+    &:hover:not(:last-child){
+        color: $primary;
+        text-decoration: none;
+        transform: translateX(-.5px);
+        &::before{
+            left: .5px;
+        }
+    }
+
+    &:hover + .dropdown-menu{
+        animation: dropdown .4s ease-in-out forwards;
+    }    
+
+}
+
+
+
+
+.btn--account{
+    @include background-gradient;
+    transition: all .4s;
+
+    &:hover{
+        color: $white;
+        text-decoration: none;
+        animation: gradient-moved 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+
+
+.btn--check{
+    background-color: $gray-100;
+    color: $gray-200;
+    border: 0 !important;
+    font-weight: 400;
+    transition: all .4s;
+    margin-bottom: 6px;
+    
+    &:hover{
+        @include background-gradient;
+        color: $gray-200 !important;
+        transform: translateX(0) !important;
+        border: 0 !important;
+    }
+    
+}
+
+.switch__button{
+    width: 25rem;
+    &--btn{
+        background-image: linear-gradient(271deg, $secondary, $primary);
+        width: 10rem;
+        height: 5rem;
+        border-radius: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 55%;
+            height: 100%;
+            background-image: linear-gradient(271deg, $secondary, $primary);
+            border-radius: 28px;
+            
+            transition:  all .4s ease-out;
+        }
+
+        &:hover::before{
+            left: 41%;
+        }
+
+        &--1{
+            border-radius: 28px;
+            background-color: $white;
+            width: 92%;
+            height: 85%;
+        }
+    }
+}

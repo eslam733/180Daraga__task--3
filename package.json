@@ -1,0 +1,22 @@
+{
+  "name": "180daraga__task--3",
+  "version": "1.0.0",
+  "description": "180-task-3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eslam733/180Daraga__task--3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eslam733/180Daraga__task--3/issues"
+  },
+  "homepage": "https://github.com/eslam733/180Daraga__task--3#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

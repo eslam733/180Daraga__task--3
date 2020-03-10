@@ -1,0 +1,17 @@
+.search__input{
+    padding: $padding-size-sm;
+    font-size: $font-size-sm;
+    width: 90%;
+    
+}
+
+input:focus{
+    outline: none !important;
+    outline-color: $white !important;
+}
+
+.form-control{
+    min-width: 19rem !important;
+    outline: none !important;
+    outline-color: $white !important;
+}

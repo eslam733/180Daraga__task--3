@@ -1,0 +1,36 @@
+@mixin background-gradient {
+    background: linear-gradient(271deg, $secondary, $primary) !important;
+    background-size: 400% 400%;
+}
+
+@mixin s {
+    width: 100%;
+    min-height: 60rem;
+    background-image: url(../../imgs/features_bg.jpg);
+    background-size: cover;
+
+    &__contant{
+        max-width: 130rem;
+        padding-top: 12rem;
+
+        &--left p{
+            color: $gray-400;
+            font-size: 1.4rem;
+        }
+
+        &--rigth .card{
+            border: 0;
+        }
+
+        &--rigth .card-body h3{
+            
+            font-size: 1.8rem;
+        }
+
+        &--rigth .card-body p{
+            color: $gray-400;
+            font-size: 1.36rem;
+        }
+
+    }
+}

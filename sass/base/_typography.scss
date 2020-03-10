@@ -1,0 +1,49 @@
+h1{
+    font-size: $font-size-lg;
+    color: $white;
+    font-weight: 900;
+}
+
+p{
+    font-size: $font-size-sm;
+    color: $gray-100;
+    transition: all .4s;
+}
+
+h2{
+    font-size: $font-size-md-3;
+    color: $white;
+}
+
+h3{
+    font-size: $font-size-md-2;
+    color: $gray-300;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h5{
+    font-size: $font-size-xs;
+    color: $Violet;
+    font-weight: bold;
+    transition: all .4s;
+}
+
+h5 .cost{
+    font-size: 1.7rem;
+}
+
+.check__card .card h5:hover,
+.check__card .card p:hover{
+    color: $danger;
+}
+.check__card i{
+    color: $corn;
+}
+.check__card .card p:last-child{
+    font-size: 1.4rem;
+}

@@ -1,0 +1,252 @@
+.card__projects{
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 72%;
+    width: 50rem;
+    opacity: 0;
+    height: 0;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: $gray-300;
+    transition: all .4s;
+
+    & img{
+        height: 28rem;
+    }
+
+    &  p{
+        font-size: 1.2rem;
+    }
+
+    & span{
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        font-size: $font-size-md;
+        color: $white;
+    }
+
+    
+}
+
+.text-muted{
+    color: $white !important;
+    font-size: 1.5rem;
+}
+
+.card-body{
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
+.check__card .card{
+    width: 40rem;
+    height: 46rem;
+    margin-right: 3rem;
+    margin-bottom: 20px;
+}
+
+.prigth__card{
+    overflow: hidden;
+    position: relative;
+    width: 37rem;
+    height: 50rem;
+    background-image: url(../../imgs/pricing_box_bg.png);
+    background-color: $white;
+    background-position: 3px 0;
+    background-repeat: no-repeat;
+    transition: all .4s;
+
+    &--top{
+        width: 100%;
+        height: 47%;
+
+        &--text{
+            width: 15rem;
+            height: 15rem;
+            @include background-gradient;
+            border-radius: 100px;
+
+            & span{
+                color: $white;
+                font-size: $font-size-sm;
+                font-weight: bold;
+            }
+
+            & span:last-child{
+                font-size: $font-size-md-3;
+            }
+        }
+    }
+
+    &--heading
+    {
+        text-align: center;
+        @include background-gradient;
+        position: absolute;
+        left: -11rem;
+        width: 30rem;
+        top: 3rem;
+        color: $white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transform: rotate(-45deg);
+    }
+
+    &--bottom{
+        
+        & ul{
+            margin-bottom: 3rem;
+        }
+
+        & ul li{
+            z-index: 1;
+            margin-bottom: 1rem;
+            font-size: $font-size-xs;
+            font-weight: 500;
+            list-style: none;
+            position: relative;
+            
+
+            & i{
+                color: $white;
+                margin-right: 1rem;
+            }
+
+            
+        }
+
+        & ul li::before{
+            content: "";
+            position: absolute;
+            left: -.2rem;
+            top: 0;
+            z-index: -1;
+            width: 2rem;
+            height: 2rem;
+            @include background-gradient;
+            border-radius: 100px;
+        }
+    }
+
+    &--1{
+        z-index: 2;
+    }
+
+    &--2{
+        transform: scale(.9);
+        right: 8.7rem;
+        z-index: 1;
+    }
+
+    &--2:hover + &--1{
+        transform: scale(.9);
+        z-index: 1;
+    }
+
+    &--2:hover{
+        transform: scale(1);
+        z-index: 2;
+    }
+}
+
+.followers__card{
+    background-color: $white;
+    width: 30rem;
+    height: 17rem;
+    margin-bottom: 3rem;
+    margin-right: 2.5rem;
+
+    & img{
+        width: 4rem;
+        height: 5rem;
+    }
+
+    & p{
+        color: $gray-200;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+}
+
+.footer{
+
+    &__contant{
+
+        &--card{
+
+            .input-group-append{
+                @include background-gradient;
+            }
+
+            height: 40rem;
+            width: 29rem;
+            
+            .form-input{
+                background-color: $black-2;
+                color: $white;
+                border: 0;
+                outline: none !important;
+                padding: 2rem;
+                font-size: 1.3rem;
+                border-radius: 0;
+            }
+
+            & .icon{
+                font-size: 3rem;
+
+                &--form{
+                    
+                    font-size: 1.5rem;
+                    padding: 0 .5rem;
+                }
+
+                &--1{
+                    color: $facebook-color;
+                }
+
+                &--2{
+                    color: $twitter-color;
+                }
+
+                &--3{
+                    color: $pintrest-color;
+                }
+
+                &--4{
+                    color: $linked-color;
+                }
+            }
+
+            
+            
+            & p{
+                color: $gray-500;
+                font-size: $font-size-xs;
+            }
+
+            & h5{
+                font-size: $font-size-sm;
+                color: $gray-600;
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+                position: relative;
+                &::after
+                {
+                    content: "";
+                    position: absolute;
+                    display: inline-block;
+                    height: 3px;
+                    background-color: $primary;
+                    width: 40%;
+                    left: 0;
+                    top: 150%;
+                }
+            }
+
+        }
+    }
+
+    
+}

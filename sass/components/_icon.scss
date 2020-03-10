@@ -1,0 +1,15 @@
+.nav__btns--icon{
+    margin-right: 7px;
+}
+
+.nav__btns--icon-2{
+    color: $white;
+    font-size: $font-size-md;
+    outline: none;
+}
+
+.icon--search{
+    @include background-gradient;
+    padding: $padding-size-xs $padding-size-sm;
+    font-size: $font-size-sm;
+}

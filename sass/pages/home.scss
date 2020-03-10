@@ -1,0 +1,92 @@
+.search{
+    box-shadow: 0 2px 30px rgba($black, 0.15);
+    z-index: 100;
+    min-width: 30rem;
+    max-width: 100rem;
+}
+
+.newly{
+    background-color: $white;
+    height: 80rem;
+    position: relative;
+    top: 50%;
+
+    &__items{
+        max-width: 110rem;
+        height: auto;
+        padding-top: $padding-size-md;
+
+        &--photo{
+            margin-top: 5rem;
+        }
+    }
+   
+    &--show{
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &--show:hover + .card__projects{
+        height: 40rem;
+        opacity: 1;
+    }
+}
+
+.whatdo{
+    @include s;
+}
+
+.pricing{
+    @include s;
+    background-image: none;
+    & h2{
+        color: $gray-300;
+        font-weight: bold;
+        margin-bottom: 4rem;
+    }
+
+    &__contant--rigth{
+        height: 55rem;
+    }
+
+}
+
+.check{
+    margin-top: 15rem;
+    margin-bottom: 12rem;
+
+    & p{
+        color: $gray-200;
+    }
+
+    & p:first-child{
+        font-weight: bold;
+    }
+
+    & h2{
+        color: $gray-300;
+        font-weight: bold;
+    }
+
+    &__text--menu{
+        max-width: 100rem;
+    }
+}
+
+.check__card{
+    min-height: 60rem;
+    max-width: 135rem;
+    padding-left: 4.5rem;
+}
+
+.followers{
+    width: 100%;
+    background-image: url(../../imgs/fact_bg.jpg);
+    background-size: cover;
+
+    &__contant{
+        padding: 10rem 0;
+        max-width: 133rem;
+    }
+}
+

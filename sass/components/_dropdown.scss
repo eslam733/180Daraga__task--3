@@ -1,0 +1,28 @@
+.dropdown-menu{
+    padding: calc(90% - 100px);
+    overflow: hidden;
+    flex-flow: column;
+}
+
+.dropdown-menu-2{
+    padding: 0;
+    width: 93%;
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%);
+    background-color: $black-1;
+
+    & a,
+    & button{
+        color: $white;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    & a:hover,
+    & button:hover{
+        background-color: rgba(255,255,255,0.1);
+        color: $white !important;
+    }
+    
+}
+
